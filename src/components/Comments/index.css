@@ -1,0 +1,65 @@
+/* Write your CSS here */
+.heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+.about-comment {
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 500;
+}
+.name-input {
+  width: 350px;
+  height: 40px;
+  margin-bottom: 25px;
+}
+.comment-input {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+}
+.add-button {
+  width: 100px;
+  height: 40px;
+  background-color: #0ea5e9;
+  color: #ffffff;
+  font-family: 'Roboto';
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comment-img {
+  margin-top: 30px;
+}
+.comment-box {
+  width: 600px;
+  box-shadow: 1px 1px 10px 5px #dee0e3;
+  border-top: 2px solid #7e858e;
+  margin-left: 90px;
+  border-radius: 5px;
+}
+.flex-box {
+  display: flex;
+}
+.count-box {
+  width: 30px;
+  height: 30px;
+  background-color: #0ea5e9;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+.count-label {
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #475569;
+  margin-top: 20px;
+}
