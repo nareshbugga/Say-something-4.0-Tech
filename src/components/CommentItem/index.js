@@ -3,14 +3,10 @@ import {formatDistanceToNow} from 'date-fns'
 import './index.css'
 
 const CommentItem = props => {
-  const {eachComment, classNames, onDeleteComment, onLikeComment} = props
-  const {id, name, comment, date, like} = eachComment
-  const color = classNames
+  const {eachComment, onDeleteComment, onLikeComment} = props
+  const {id, name, comment, date, like, BgColor} = eachComment
 
   const initial = name.slice(0, 1)
-
-  const index = Math.ceil(Math.random() * classNames.length - 1)
-  const BgColor = color[index]
 
   const onDelete = () => onDeleteComment(id)
   const onLike = () => onLikeComment(id)

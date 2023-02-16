@@ -13,6 +13,7 @@ const initialContainerBackgroundClassNames = [
   'light-blue',
 ]
 
+const classNames = initialContainerBackgroundClassNames
 const List = []
 // Write your code here
 class Comments extends Component {
@@ -29,12 +30,15 @@ class Comments extends Component {
   onAddComment = event => {
     event.preventDefault()
     const {name, comment} = this.state
+    const index = Math.ceil(Math.random() * classNames.length - 1)
+    const color = classNames[index]
     const newComment = {
       id: uuidv4(),
       name,
       comment,
       date: new Date(),
       like: false,
+      BgColor: color,
     }
     this.setState(prevState => ({
       commentList: [...prevState.commentList, newComment],
@@ -110,7 +114,6 @@ class Comments extends Component {
               <CommentItem
                 eachComment={eachComment}
                 key={eachComment.id}
-                classNames={initialContainerBackgroundClassNames}
                 onDeleteComment={this.onDeleteComment}
                 onLikeComment={this.onLikeComment}
               />
